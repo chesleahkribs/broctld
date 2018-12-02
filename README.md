@@ -1,2 +1,3 @@
 # broctld
-General implementation of broctld
+
+This is general implementation of the broctld project
