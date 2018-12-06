@@ -1,10 +1,33 @@
-def UpdateConfiguration():
-	
-	#read message from main process
-	
-	for i in list_of_nodes:
-		#depoly new config to the node
+#!/usr/bin/python
 
-def StartNode():
+import multiprocessing
+import socket
+import sys
+import os
 
-	#at address tell bro to start a new node
+def spawn_bro(address, port):
+	pass
+
+def get_nodes(node_file, nodes):
+
+	#nodes structure: [[addr, port],...]
+	#read in list of nodes
+	config = open(node_file, "r")	
+	for line in config:
+		a, p = line.replace('\n','').split(':')
+		nodes.append([a,p])
+	config.close()
+
+def check_nodes():
+	pass
+
+
+
+if __name__ == "__main__":
+	nodes = []
+
+	#read in list of nodes
+	get_nodes("nodes.config", nodes)
+
+	for node in nodes:
+		print node
