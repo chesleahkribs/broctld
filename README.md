@@ -1,5 +1,9 @@
 # broctld
 
+Joint project with @KiraJ42 @RobertMinter
+December 2018 - Concurrent Parallel and Distributive Programming 
+Term Project 
+
 broctld is a future project listed on the Bro website: https://www.bro.org/development/projects/broctld.html
 
 The suggested design of broctld is defined as follows:
